@@ -74,16 +74,16 @@ def matrizPesos(maquinas):
                             n = n + 1
                 m = (len(maquina1)-n) + (len(maquina2)-n)                
                 
-                if (n==0):
-                    min = i+1
-                    max = k+1
-                    peso = (1-((n)/(n+m)))
-                    pesos.append((min,max,peso))
-                else:
-                    peso = (1-((n)/(n+m)))
-                    min = i+1
-                    max = k+1               
-                    pesos.append((min,max,peso))
+                # if (n==0):
+                #     min = i+1
+                #     max = k+1
+                #     peso = (1-((n)/(n+m)))
+                #     pesos.append((min,max,peso))
+                # else:
+                peso = (1-((n)/(n+m)))
+                min = i+1
+                max = k+1               
+                pesos.append((min,max,peso))        
     return pesos
 
 g_data=matrizPesos(maquinas)
